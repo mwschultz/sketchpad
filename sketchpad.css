@@ -1,0 +1,30 @@
+.container {
+  border:1px solid black;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+}
+
+.square {
+  border:0.5px solid black;
+  border-radius: 0px;
+  height: 100%;
+  width: 6%;
+  float:left;
+}
+
+.row {
+  border:0.5px solid red;
+  border-radius: 0px;
+  height: 6%;
+  width: 100%;
+}
+
+.color {
+  border:0.5px solid black;
+  border-radius: 0px;
+  height: 100%;
+  width: 6%;
+  float:left;
+  background-color:red;
+}
