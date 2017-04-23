@@ -1,30 +1,52 @@
-.container {
-  border:1px solid black;
-  border-radius: 2px;
-  height: 100%;
-  width: 100%;
+.heading {
+  margin: auto;
+  width: 50%;
+  border: 2px solid black;
+  padding: 2px;
+  text-align: center;
 }
 
-.square {
-  border:0.5px solid black;
-  border-radius: 0px;
-  height: 100%;
-  width: 6%;
-  float:left;
+.controls {
+  width: 15%;
+  height: 75%;
+  border: 2px solid black;
+  padding: 2px;
+  text-align: center;
+  float: left;
 }
+
+
 
 .row {
+  border:0.5px solid green;
+  background-color: #f2f2f2;
+}
+
+.column {
   border:0.5px solid red;
-  border-radius: 0px;
-  height: 6%;
-  width: 100%;
+  background-color: #f2f2f2;
+
+}
+
+
+.grid {
+    border-collapse: collapse;
+    width:75%;
+    height:75%;
+    margin: auto;
+}
+
+.cell {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
 .color {
-  border:0.5px solid black;
-  border-radius: 0px;
-  height: 100%;
-  width: 6%;
-  float:left;
-  background-color:red;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color:red;
+}
+
+#remake-grid {
+  margin: 25px;
 }
