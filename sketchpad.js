@@ -24,7 +24,7 @@ else { /*If the user has entered in a value, the table is resized to that value/
 }
 
 $("#remake-grid").click(function() { /*If the user clicks on the Remake Grid function, the table is re-created AND the add color function is called, again*/
-var x=prompt("How many squares?");
+var x=prompt("How many squares on each side should the new canvas be? Please enter a number.");
 $(".grid").empty(); /*This empties out all the existing cells in the table*/
 createTable(x);
 addColor();
@@ -43,12 +43,12 @@ $(".cell").mouseover(function() {
 
 if($('input[name=Fill]:checked').val() == 'Black') {
 
-$(this).css("background-color","transparent");
+$(this).css("background-color","transparent"); /*First, we set the css background color to transparent, then we add in a new color.*/
 $(this).css("background-color","black");}
 
 else {
-$(this).css("background-color","transparent");
-var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); /*note that this is defined in the function*/
+$(this).css("background-color","transparent"); /*First, we set the css background color to transparent, then we add in a new color.*/
+var randomColor = "#"+((1<<24)*Math.random()|0).toString(16); /*The random number is included INSIDE the function, so that every mouse-over, you're getting a new random color!*/
 $(this).css("background-color",randomColor);}
 
 });}
